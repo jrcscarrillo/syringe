@@ -2,6 +2,7 @@
 
 namespace Syringe;
 
+include_once '../src/ServiceRepository.php';
 class InMemoryServiceRepository implements ServiceRepository
 {
     private $services = [];

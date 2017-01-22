@@ -1,6 +1,17 @@
 <?php
 
-class FunctionalTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+include_once '../src/Container.php';
+include_once '../src/JsonServiceFactory.php';
+include_once '../src/InMemoryServiceRepository.php';
+include_once '../src/CircularDependencyException.php';
+
+include_once '../tests/dummy/ClassA.php';
+include_once '../tests/dummy/ClassB.php';
+include_once '../tests/dummy/ClassC.php';
+include_once '../tests/dummy/ClassD.php';
+
+class FunctionalTest extends TestCase
 {
 
     private $container;

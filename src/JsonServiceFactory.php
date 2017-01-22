@@ -1,7 +1,7 @@
 <?php
 
 namespace Syringe;
-
+include_once '../src/ServiceFactory.php';
 class JsonServiceFactory implements ServiceFactory
 {
     /**

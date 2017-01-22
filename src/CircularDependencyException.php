@@ -1,8 +1,8 @@
 <?php
 
 namespace Syringe;
-
-class CircularDependencyException extends \Exception
+use Exception;
+class CircularDependencyException extends Exception
 {
 
 }
