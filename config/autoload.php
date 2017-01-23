@@ -3,10 +3,10 @@
  * An example of a project-specific implementation.
  *
  * After registering this autoload function with SPL, the following line
- * would cause the function to attempt to load the \Foo\Bar\Baz\Qux class
- * from /path/to/project/src/Baz/Qux.php:
+ * would cause the function to attempt to load the \Syringe\Controller\Usuario class
+ * from /path/to/project/src/Controller/Usuario.php:
  *
- *      new \Foo\Bar\Baz\Qux;
+ *      new \Syringe\Controller\Usuario;
  *
  * @param string $class The fully-qualified class name.
  * @return void
@@ -14,7 +14,7 @@
 spl_autoload_register(function ($class) {
 
     // project-specific namespace prefix
-    $prefix = 'Foo\\Bar\\';
+    $prefix = 'Syringe\\';
 
     // base directory for the namespace prefix
     $base_dir = __DIR__ . '/src/';
